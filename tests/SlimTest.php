@@ -816,6 +816,7 @@ class SlimTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(
           strtotime('5 days'),
           strtotime($header['Expires']),
+          '', // message
           1 // delta
         );
     }
